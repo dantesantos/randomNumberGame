@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+
+    <title>JavaScript Number Guessing Game</title>
+  </head>
+
+  <body onload="javascript:randomNumber()">
+    <div class="container">
+      <header>
+        <hr>
+        <h1>JavaScript Number Guessing Game</h1>
+        <hr>
+      </header>
+
+      <section id="message"></section>
+
+      <section>
+        <h2>Super Awesome Guess a Number Game!!!</h2>
+
+        <p>
+          Between 1 and <span id="numLimit">100</span>
+        </p>
+
+        <div class="row">
+
+          <div class="col-sm-9">
+            <h2>Guess the Number:</h2>
+            <input id="guessInput" min="1" max="100" step="1" placeholder="What is your guess?">
+            <button id="guessBtn" onclick="evaluateGuess()">Guess</button>
+          </div>
+
+          <div class="col-sm-3">
+            <h2>Scoreboard:</h2>
+            <div id="score">0</div>
+            <small>You have <span id="guessLimit">10</span> guesses to get the right answer. The number of guesses remaining will be added to your score.</small>
+          </div>
+
+          <div class="hint">
+            <p id="hint1"></p>
+            <p id="hint2"></p>
+            <p id="demo"></p>
+            <p id="testando"></p>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- Your code... -->
+    <script type="text/javascript" src="main.js"></script>
+
+    <!-- Shaun code -->
+    <!-- <script type="text/javascript" src="shaun-code.js"></script> -->
+  </body>
+</html>
